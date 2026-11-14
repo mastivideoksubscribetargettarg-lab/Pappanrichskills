@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PAPPAN RICH SKILLS | RICH KING</title>
+<meta name="description" content="PAPPAN RICH SKILLS Online Business Learning Center">
+<meta name="theme-color" content="#080808">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#080808;color:white;font-family:Arial,sans-serif;line-height:1.6}
+:root{--gold:#e9bd57;--light:#ffe6a0;--panel:#171717}
+a{text-decoration:none;color:inherit}
+.container{width:92%;max-width:1150px;margin:auto}
+.offer{text-align:center;background:linear-gradient(90deg,#9b691b,#ffe39a,#9b691b);color:#111;padding:9px;font-weight:bold;font-size:13px}
+header{position:sticky;top:0;background:#101010;z-index:10;border-bottom:1px solid #634a20}
+nav{min-height:75px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.logo{color:var(--gold);font-size:20px;font-weight:900}
+.logo small{display:block;color:white;font-size:9px;letter-spacing:2px}
+.links{display:flex;gap:18px;align-items:center;font-size:13px}
+.links a:hover{color:var(--gold)}
+.menu{display:none;background:none;color:var(--gold);border:0;font-size:27px}
+.btn{display:inline-block;background:linear-gradient(135deg,#ffe6a0,#bd8321);color:#111;padding:12px 20px;border-radius:7px;font-weight:bold;border:0}
+.outline{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:11px 20px;border-radius:7px}
+.hero{padding:75px 0;background:radial-gradient(ellipse at 80% 40%,#6c491e55,transparent 55%),#0b0b0b}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px}
+.tag{color:var(--gold);letter-spacing:3px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(52px,8vw,88px);color:var(--light);line-height:1.1;margin:15px 0;text-shadow:0 3px 25px #b88732}
+.hero h2{font-size:clamp(22px,3vw,32px)}
+p{color:#bbb}
+.hero p{margin:18px 0 25px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-photo{height:350px;border:1px solid var(--gold);border-radius:20px;display:grid;place-items:center;text-align:center;background:linear-gradient(#0008,#000b),url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=85') center/cover}
+.photo-text{background:#090909df;padding:25px;border-radius:15px}
+.photo-text strong{font-size:30px;color:var(--light)}
+section{padding:65px 0}
+.heading{text-align:center;margin-bottom:35px}
+.heading small{color:var(--gold);letter-spacing:3px}
+.heading h2{font-size:34px;margin:8px 0}
+.trust{background:#141414;border-block:1px solid #49391e}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:12px}
+.trust strong{display:block;color:var(--gold);padding:15px 0}
+.cards,.courses{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card,.course{background:var(--panel);border:1px solid #51401f;padding:23px;border-radius:14px}
+.card h3,.course h3{color:var(--light)}
+.card:hover,.course:hover{border-color:var(--gold);transform:translateY(-3px)}
+.price{font-size:34px;font-weight:bold;margin:12px 0}
+.card ul{list-style:none;color:#bbb;font-size:13px;margin:15px 0}
+.card li{padding:6px 0;border-bottom:1px solid #ffffff15}
+.card li:before{content:"✓ ";color:var(--gold)}
+.card .btn{display:block;text-align:center}
+.popular{border:2px solid var(--gold)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{background:var(--panel);padding:24px;border:1px solid #51401f;border-radius:13px;text-align:center}
+.step b{display:grid;place-items:center;background:var(--gold);color:#111;width:50px;height:50px;border-radius:50%;margin:0 auto 12px;font-size:23px}
+.step p,.course p{font-size:13px;margin-top:8px}
+.course .emoji{font-size:32px}
+.dashboard{background:#17130c;border:1px solid #8c6728;border-radius:16px;padding:25px}
+.dash-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.dash-item{background:#ffffff10;padding:18px;text-align:center;border-radius:9px}
+.dash-item strong{display:block;color:var(--gold);font-size:22px}
+.dash-item small{color:#bbb}
+.leaders{max-width:700px;margin:auto}
+.leader{display:flex;gap:15px;align-items:center;background:#171717;padding:14px;margin:9px 0;border:1px solid #49391e;border-radius:10px}
+.leader strong{flex:1}
+.leader span:last-child{color:var(--gold)}
+.proof{background:#171717;padding:25px;border:1px dashed var(--gold);border-radius:12px;text-align:center}
+.webinar{text-align:center;background:radial-gradient(ellipse,#44300f,#101010);border:1px solid #8c6728;border-radius:16px;padding:35px}
+.webinar h2{color:var(--light);font-size:30px}
+.faq{max-width:800px;margin:auto}
+details{background:#171717;padding:17px;margin:10px 0;border:1px solid #49391e;border-radius:9px}
+summary{color:var(--gold);cursor:pointer;font-weight:bold}
+details p{margin-top:10px;font-size:14px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-box{background:#171717;border:1px solid #49391e;border-radius:12px;padding:23px}
+.contact-box p{margin:9px 0}
+.socials{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
+.socials a{color:var(--gold);border:1px solid #76551e;padding:8px;border-radius:6px;font-size:12px}
+footer{text-align:center;padding:30px;background:#050505;border-top:1px solid #49391e}
+footer p{font-size:12px;margin:8px}
+footer a{color:var(--gold);margin:5px;font-size:12px}
+.wa{position:fixed;bottom:18px;right:15px;background:#168b4c;color:white;padding:12px 17px;border-radius:40px;z-index:20;font-weight:bold}
+@media(max-width:800px){
+.menu{display:block}
+.links{display:none;position:absolute;top:75px;left:0;right:0;background:#111;padding:22px;flex-direction:column}
+.links.open{display:flex}
+.hero-grid{grid-template-columns:1fr}
+.hero-photo{height:260px}
+.cards,.courses{grid-template-columns:repeat(2,1fr)}
+.trust-grid{grid-template-columns:repeat(2,1fr)}
+.steps{grid-template-columns:1fr}
+}
+@media(max-width:500px){
+.cards,.courses,.contact-grid{grid-template-columns:1fr}
+.dash-grid{grid-template-columns:repeat(2,1fr)}
+.hero{padding:45px 0}
+section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="offer">🔥 LIMITED OFFER | JOIN TODAY | LEARN - EARN - GROW</div>
+
+<header>
+<nav class="container">
+<a class="logo" href="#home">👑 PAPPAN RICH SKILLS<small>ONLINE BUSINESS LEARNING CENTER</small></a>
+<button class="menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+<div class="links">
+<a href="#home">Home</a><a href="#packages">Packages</a>
+<a href="#courses">Courses</a><a href="#leaderboard">Leaderboard</a>
+<a href="#contact">Contact</a><a class="btn" href="#join">Join Now</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="tag">👑 WELCOME TO OUR COMPANY</div>
+<h1>RICH KING</h1>
+<h2>Learn High-Income Skills & Build Your Future</h2>
+<p>Digital Marketing | Business Promotion | Social Media Growth. नई डिजिटल स्किल सीखें और अपने भविष्य को बेहतर बनाने की दिशा में कदम बढ़ाएँ।</p>
+<div class="actions">
+<a class="btn" href="#join">JOIN NOW →</a>
+<a class="outline" href="#packages">VIEW PACKAGES</a>
+</div>
+</div>
+<div class="hero-photo"><div class="photo-text"><strong>👑 RICH KING</strong><p>YOUR LEARNING JOURNEY STARTS HERE</p><p>अपनी फोटो यहाँ लगाएँ</p></div></div>
+</div>
+</section>
+
+<section class="trust">
+<div class="container trust-grid">
+<div><strong>📚 Skill Learning</strong><p>Structured Courses</p></div>
+<div><strong>🤝 Community</strong><p>Learn Together</p></div>
+<div><strong>🎯 Practical Skills</strong><p>Learn By Doing</p></div>
+<div><strong>💬 Support</strong><p>Student Assistance</p></div>
+</div>
+</section>
+
+<section id="packages">
+<div class="container">
+<div class="heading"><small>CHOOSE YOUR PLAN</small><h2>Our Packages</h2><p>अपनी जरूरत के अनुसार पैकेज चुनें।</p></div>
+<div class="cards">
+<div class="card"><h3>STARTER PACKAGE</h3><div class="price">₹499</div><ul><li>Included Courses</li><li>Learning Resources</li><li>Student Support</li><li>Package Terms Apply</li></ul><a class="btn" href="#join">SELECT PACKAGE</a></div>
+<div class="card"><h3>TRAFFIC PACKAGE</h3><div class="price">₹999</div><ul><li>Included Courses</li><li>Learning Resources</li><li>Student Support</li><li>Package Terms Apply</li></ul><a class="btn" href="#join">SELECT PACKAGE</a></div>
+<div class="card popular"><h3>BRAND PACKAGE</h3><div class="price">₹2,499</div><ul><li>Included Courses</li><li>Learning Resources</li><li>Student Support</li><li>Package Terms Apply</li></ul><a class="btn" href="#join">SELECT PACKAGE</a></div>
+<div class="card"><h3>SILVER PACKAGE</h3><div class="price">₹4,999</div><ul><li>Included Courses</li><li>Learning Resources</li><li>Student Support</li><li>Package Terms Apply</li></ul><a class="btn" href="#join">SELECT PACKAGE</a></div>
+<div class="card"><h3>GOLD PACKAGE</h3><div class="price">₹9,999</div><ul><li>Included Courses</li><li>Learning Resources</li><li>Student Support</li><li>Package Terms Apply</li></ul><a class="btn" href="#join">SELECT PACKAGE</a></div>
+</div>
+<p style="font-size:12px;color:#aaa;margin-top:15px">कोर्स, एक्सेस और Referral Benefits की वास्तविक शर्तें खरीदने से पहले जाँचें। कोई कमाई सुनिश्चित नहीं है।</p>
+</div>
+</section>
+
+<section class="dark-section">
+<div class="container">
+<div class="heading"><small>YOUR JOURNEY</small><h2>How To Get Started</h2></div>
+<div class="steps">
+<div class="step"><b>1</b><h3>Choose Package</h3><p>अपनी जरूरत के अनुसार पैकेज और शर्तें देखें।</p></div>
+<div class="step"><b>2</b><h3>Learn Skills</h3><p>कोर्स पढ़ें और अभ्यास करें।</p></div>
+<div class="step"><b>3</b><h3>Share & Grow</h3><p>उपयोगी जानकारी साझा करें। योग्य Referral Benefits नियमों के अधीन हैं।</p></div>
+</div>
+</div>
+</section>
+
+<section id="courses">
+<div class="container">
+<div class="heading"><small>LEARN WITH US</small><h2>Our Courses</h2><p>सीखें, अभ्यास करें और अपनी स्किल विकसित करें।</p></div>
+<div class="courses">
+<div class="course"><div class="emoji">📱</div><h3>Digital Marketing</h3><p>डिजिटल मार्केटिंग के बेसिक्स सीखें।</p></div>
+<div class="course"><div class="emoji">📊</div><h3>Finance & Trading</h3><p>वित्तीय शिक्षा और बाजार के बेसिक्स।</p></div>
+<div class="course"><div class="emoji">🎬</div><h3>Content Creation</h3><p>वीडियो और कंटेंट बनाना सीखें।</p></div>
+<div class="course"><div class="emoji">💻</div><h3>Freelancing</h3><p>फ्रीलांसिंग के लिए जरूरी स्किल।</p></div>
+<div class="course"><div class="emoji">📸</div><h3>Instagram Growth</h3><p>सोशल मीडिया की उपयोगी रणनीतियाँ।</p></div>
+<div class="course"><div class="emoji">▶️</div><h3>YouTube Growth</h3><p>चैनल और वीडियो की योजना बनाना।</p></div>
+</div>
+</div>
+</section>
+
+<section class="dark-section">
+<div class="container">
+<div class="heading"><small>STUDENT AREA</small><h2>Student Dashboard Preview</h2></div>
+<div class="dashboard">
+<h3 class="gold">👑 MY LEARNING DASHBOARD</h3>
+<div class="dash-grid">
+<div class="dash-item"><strong>₹0</strong><small>Wallet Balance</small></div>
+<div class="dash-item"><strong>0</strong><small>Total Earning</small></div>
+<div class="dash-item"><strong>0</strong><small>Total Sales</small></div>
+<div class="dash-item"><strong>0</strong><small>My Team</small></div>
+<div class="dash-item"><strong>0</strong><small>My Courses</small></div>
+<div class="dash-item"><strong>—</strong><small>Referral Link</small></div>
+</div>
+<p class="note">यह केवल डिजाइन का डेमो है। वास्तविक Wallet, Login, Sales और Withdraw के लिए सुरक्षित Backend जरूरी है।</p>
+</div>
+</div>
+</section>
+
+<section id="leaderboard">
+<div class="container">
+<div class="heading"><small>OUR COMMUNITY</small><h2>Leaderboard</h2><p>सत्यापित डेटा उपलब्ध होने पर रैंकिंग यहाँ दिखाई जाएगी।</p></div>
+<div class="leaders">
+<div class="leader"><span>🥇</span><strong>Top Student 1</strong><span>Verified data pending</span></div>
+<div class="leader"><span>🥈</span><strong>Top Student 2</strong><span>Verified data pending</span></div>
+<div class="leader"><span>🥉</span><strong>Top Student 3</strong><span>Verified data pending</span></div>
+<div class="leader"><span>4</span><strong>Student 4</strong><span>—</span></div>
+<div class="leader"><span>5</span><strong>Student 5</strong><span>—</span></div>
+</div>
+</div>
+</section>
+
+<section class="dark-section">
+<div class="container">
+<div class="heading"><small>STUDENT EXPERIENCE</small><h2>Reviews & Testimonials</h2></div>
+<div class="proof"><h3 class="gold">Your Real Student Stories</h3><p>यहाँ वास्तविक विद्यार्थियों की अनुमति से उनके अनुभव और प्रमाणित स्क्रीनशॉट जोड़े जाएँगे।</p></div>
+</div>
+</section>
+
+<section>
+<div class="container webinar">
+<h2>🎥 Free Demo Class</h2>
+<p style="margin:12px">रोज शाम 7 बजे | समय और उपलब्धता की पुष्टि करें।</p>
+<a class="btn" href="#contact">REGISTER INTEREST</a>
+</div>
+</section>
+
+<section class="dark-section">
+<div class="container">
+<div class="heading"><small>HELP CENTER</small><h2>Frequently Asked Questions</h2></div>
+<div class="faq">
+<details><summary>पैकेज लेने के बाद कोर्स कैसे मिलेगा?</summary><p>कोर्स की उपलब्धता, एक्सेस और डिलीवरी संबंधित पैकेज की शर्तों के अनुसार होगी।</p></details>
+<details><summary>क्या कमाई की गारंटी है?</summary><p>नहीं। किसी भी कमाई की गारंटी नहीं है। परिणाम व्यक्ति की मेहनत, कौशल और परिस्थितियों पर निर्भर करते हैं।</p></details>
+<details><summary>Referral Benefits कैसे मिलेंगे?</summary><p>यदि कोई योग्य Referral Program उपलब्ध है, तो उसकी लिखित शर्तों और पात्रता के अनुसार लाभ मिलेंगे।</p></details>
+<details><summary>क्या Refund मिलेगा?</summary><p>Refund की पात्रता खरीद से पहले दिखाई गई नीति और लागू कानूनों के अनुसार तय होगी।</p></details>
+<details><summary>Support कैसे मिलेगा?</summary><p>नीचे दिए गए संपर्क माध्यमों से सहायता माँग सकते हैं।</p></details>
+</div>
+</div>
+</section>
+
+<section id="join">
+<div class="container">
+<div class="heading"><small>START YOUR JOURNEY</small><h2>Join PAPPAN RICH SKILLS</h2><p>कोर्स और पैकेज की जानकारी के लिए संपर्क करें।</p></div>
+<div class="contact-grid">
+<div class="contact-box">
+<h3 class="gold">👑 PAPPAN RICH SKILLS</h3>
+<p>Founder: Pappan Kumar</p>
+<p>Email: indrichskills@gmail.com</p>
+<p>WhatsApp: अपना सही नंबर जोड़ें</p>
+<p>Location: India</p>
+<div class="socials">
+<a href="https://www.youtube.com/@TheskilsKing" target="_blank">YouTube</a>
+<a href="https://instagram.com/" target="_blank">Instagram</a>
+<a href="https://facebook.com/" target="_blank">Facebook</a>
+<a href="https://telegram.org/" target="_blank">Telegram</a>
+</div>
+</div>
+<div class="contact-box">
+<h3 class="gold">Contact Us</h3>
+<p>पैकेज और कोर्स की जानकारी पाने के लिए ईमेल करें।</p>
+<a class="btn" href="mailto:indrichskills@gmail.com?subject=Pappan%20Rich%20Skills%20Enquiry">SEND EMAIL</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<h3 class="gold">👑 PAPPAN RICH SKILLS</h3>
+<p>Learn • Grow • Build Your Future</p>
+<p><a href="#home">Home</a><a href="#packages">Packages</a><a href="#courses">Courses</a><a href="#contact">Contact</a></p>
+<p>Privacy Policy | Terms & Conditions | Refund Policy</p>
+<p>© 2026 PAPPAN RICH SKILLS. All Rights Reserved.</p>
+</footer>
+
+<a class="wa" href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp Support</a>
+
+<script>
+function closeMenu(){
+ document.querySelector(".links").classList.remove("open");
+}
+document.querySelectorAll(".links a").forEach(function(link){
+ link.addEventListener("click",closeMenu);
+});
+</script>
+</body>
+</html>
